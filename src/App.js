@@ -1,28 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
-var tuPutaMadre = 'Esteban'
-var numeroTermo = 33
+import './assets/css/App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Button, Navbar, Nav, NavItem, NavDropdown } from 'react-bootstrap';
 
-function mostrarPorPantalla(nombre, numeroTermo){
-  var returneo =  
-        <div> 
-          <h2> <p>Hola, soy {nombre}, pelotas de </p> </h2>
-          <h1> cabeza de termo {numeroTermo} </h1>
-        </div>
-  return returneo
-}
+//Importo componentes
+import DepartamentoComponent from './components/DepartamentoComponent.js';
+
+
 
 function App() {
-  var prueba = <h2> xD </h2>
   return (
-    <div className="App">
-      <header className="App-header">
-     
-      { mostrarPorPantalla(tuPutaMadre, numeroTermo) }
-
-      </header>
-    </div>
+        <header>
+   
+          <div>
+              <DepartamentoComponent />
+          </div>
+       </header> 
   );
 }
+
+
 
 export default App;
