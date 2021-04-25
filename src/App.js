@@ -3,7 +3,7 @@ import Navbar from './components/Navbar';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 //Importo componentes
-import DepartamentoComponent from './components/DepartamentoComponent.js';
+import ListarDeptoComponent from './components/ListarDeptoComponent.js';
 
 
 function App() {
@@ -13,9 +13,9 @@ function App() {
     <Router>
         <Navbar />    
         <Switch>
-          <Route path='/' exact component={DepartamentoComponent} />
-          <Route path='/ListarDeptos' exact component={DepartamentoComponent} />
-          <Route path='/CrearDepto' exact component={DepartamentoComponent} />
+          <Route path='/' exact component={ListarDeptoComponent} />
+          <Route path='/ListarDeptos' exact component={ListarDeptoComponent} />
+          <Route path='/CrearDepto' exact component={ListarDeptoComponent} />
         </Switch>
     </Router>    
          
