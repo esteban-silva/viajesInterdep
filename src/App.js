@@ -1,23 +1,26 @@
 import './assets/css/App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { Button, Navbar, Nav, NavItem, NavDropdown } from 'react-bootstrap';
+import Navbar from './components/Navbar';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 //Importo componentes
 import DepartamentoComponent from './components/DepartamentoComponent.js';
 
 
-
 function App() {
   return (
-        <header>
-   
-          <div>
-              <DepartamentoComponent />
-          </div>
-       </header> 
+    
+    // Menu
+    <Router>
+        <Navbar />    
+        <Switch>
+          <Route path='/' exact component={DepartamentoComponent} />
+          <Route path='/ListarDeptos' exact component={DepartamentoComponent} />
+          <Route path='/CrearDepto' exact component={DepartamentoComponent} />
+        </Switch>
+    </Router>    
+         
   );
 }
-
 
 
 export default App;
