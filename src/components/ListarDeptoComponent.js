@@ -5,7 +5,7 @@ import DepartamentoServices from '../services/DepartamentoServices';
 
 
 
-class DepartamentoComponent extends Component{
+class ListarDeptoComponent extends Component{
     
     constructor(props){
         super(props)
@@ -49,4 +49,4 @@ class DepartamentoComponent extends Component{
         )};
 };
 
-export default DepartamentoComponent;
+export default ListarDeptoComponent;

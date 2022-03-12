@@ -1,5 +1,5 @@
 import axios from 'axios'
-
+let crear = '/crear'
 const URL = 'http://localhost:8080/';
 
 class DepartamentoService{
@@ -8,8 +8,13 @@ class DepartamentoService{
         return axios.get(URL+"listar");
     }
 
-    setDepartamento(){
-        return axios.get(URL+"crear")
+    setDepartamento(depto){
+        return  axios({
+            method: 'post',
+            url: 'http://localhost:8080/crear',
+            data: depto
+        })
+
     }
 
 }

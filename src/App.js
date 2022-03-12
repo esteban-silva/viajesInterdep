@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 //Importo componentes
 import ListarDeptoComponent from './components/ListarDeptoComponent.js';
+import CrearDeptoComponent from './components/CrearDeptoComponent';
 
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
         <Switch>
           <Route path='/' exact component={ListarDeptoComponent} />
           <Route path='/ListarDeptos' exact component={ListarDeptoComponent} />
-          <Route path='/CrearDepto' exact component={ListarDeptoComponent} />
+          <Route path='/CrearDepto' exact component={CrearDeptoComponent} />
         </Switch>
     </Router>    
          
